@@ -17,7 +17,7 @@ header {
     /* border: 1px solid white; */
 }
 
-.container-header{
+.container-header, .container-footer{
     display: flex;
     justify-content: space-between;
 }
@@ -54,4 +54,119 @@ header {
     padding: 10px 15px;
     border-radius: 10px;
     line-height: 50px;
+    text-decoration: none;
+}
+
+/* main */
+
+.container-main {
+    display: flex;
+    height: calc(100vh - 100px);
+    width: 100wh;
+}
+
+.main-left {
+    display: flex;
+    border: 1px solid gray;
+    width: 10%;
+    align-items: center;
+}
+
+.skip-btn {
+    width: 60px;
+    height: 90px;
+    border: 2px solid black;
+    background: linear-gradient(bottom, #000 , #222222 100%);
+    margin-left: 10px;
+    color: #2dbaff;
+    font-size: 80px;
+    padding-left: 10px;
+}
+
+.main-center {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-right {
+    border: 1px solid gray;
+    width: 10%;
+}
+
+.user-img{
+    width: calc(20% - 1%);
+    height: calc(20% - 1%);
+    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* margin: 1%; */
+}
+
+.name-user {
+    position: absolute;
+    color: #fff;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+}
+
+.fa-microphone-slash {
+    color: red;
+}
+
+.photo-1 {
+    background-image: url(../img/Germano-Mosconi.jpg);
+}
+
+/* footer */
+
+.container-footer {
+    color: #aaabac;
+}
+
+.fa-microphone, .fa-video {
+    font-size: 20px;
+}
+
+.col-footer-left {
+    /* display: flex; */
+    border: 1px solid gray;
+}
+
+.col-footer-center {
+    /* display: flex; */
+    width: 200px;
+    height: 50px;
+    border: 1px solid gray;
+
+
+}
+
+.col-footer-right {
+    /* display: flex; */
+    height: 50px;
+    position: relative;
+    border: 1px solid gray;
+    padding-right: 10px;
+}
+
+.btn-end {
+    padding: 5px 15px;
+    background-color: red;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
 }
