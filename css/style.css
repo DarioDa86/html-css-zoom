@@ -76,7 +76,7 @@ header {
     width: 60px;
     height: 90px;
     border: 2px solid black;
-    background: linear-gradient(bottom, #000 , #222222 100%);
+    background: linear-gradient(#222, #000);
     margin-left: 10px;
     color: #2dbaff;
     font-size: 80px;
@@ -134,30 +134,54 @@ header {
     color: #aaabac;
 }
 
-.fa-microphone, .fa-video {
-    font-size: 20px;
+.fa-microphone, .fa-video, .fa-shield-virus, .fa-user-friends, 
+.fa-comment-alt, .fa-pause-circle, .fa-stop-circle, .fa-smile {
+    font-size: 25px;
+}
+
+.fa-arrow-up {
+    font-size: 15px;
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: #1a1a1a;
+    background-color: #23d959;
+}
+
+.share-screen {
+    color: #23d959;
+}
+
+.col-footer-left, .col-footer-center, .col-footer-right {
+    height: 50px;
+    list-style: none;
 }
 
 .col-footer-left {
-    /* display: flex; */
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid gray;
+    padding-left: 15px;
+}
+
+.col-footer-left li {
+    text-align: center;
 }
 
 .col-footer-center {
-    /* display: flex; */
-    width: 200px;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-width: 550px;
     border: 1px solid gray;
-
-
 }
 
 .col-footer-right {
-    /* display: flex; */
-    height: 50px;
-    position: relative;
     border: 1px solid gray;
-    padding-right: 10px;
+    padding-right: 15px;
+
 }
 
 .btn-end {
@@ -165,7 +189,6 @@ header {
     background-color: red;
     border-radius: 5px;
     line-height: 50px;
-    text-align: left;
     text-decoration: none;
     color: white;
     font-weight: 800;
