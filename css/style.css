@@ -23,7 +23,6 @@ header {
 }
 
 .col-header-left, .col-header-right {
-    /* border: 1px solid red; */
     height: 50px;
     padding: 0 10px;
 }
@@ -67,7 +66,6 @@ header {
 
 .main-left {
     display: flex;
-    border: 1px solid gray;
     width: 10%;
     align-items: center;
 }
@@ -104,7 +102,6 @@ header {
 .main-center {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid gray;
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -112,18 +109,13 @@ header {
 }
 
 .main-right {
-    border: 1px solid gray;
     width: 10%;
-    align-items: center;
-    justify-content: flex-end;
-
 }
 
 .user-container{
     display: flex;
     width: calc(20% - 5px);
     height: calc(20% - 5px);
-    border: 1px solid gray;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -159,19 +151,21 @@ header {
     color: red;
 }
 
-/* .photo-1 {
-    background-image: url(../img/Germano-Mosconi.jpg);
-} */
-
 /* footer */
 
 .container-footer {
     color: #aaabac;
+    background: linear-gradient(#222, #000);
 }
 
 .fa-microphone, .fa-video, .fa-shield-virus, .fa-user-friends, 
 .fa-comment-alt, .fa-pause-circle, .fa-stop-circle, .fa-smile {
     font-size: 25px;
+}
+
+.fa-pause-circle, .fa-stop-circle {
+    border: 3px;
+    border-radius: 3px;
 }
 
 .fa-arrow-up {
@@ -182,7 +176,7 @@ header {
     background-color: #23d959;
 }
 
-.share-screen {
+.share-screen, .green{
     color: #23d959;
 }
 
@@ -196,12 +190,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid gray; */
     padding-left: 15px;
 }
 
-.col-footer-left li {
+.col-footer-left li, .col-footer-center li {
     text-align: center;
+    position: relative;
+}
+
+.fa-angle-up {
+    position: absolute;
+    right: -5px;
+    bottom: 20px;
+}
+
+.fa-plus {
+    position: absolute;
+    right: 12px;
+    top: -1px;
+    font-size: 10px;
+    color: #abacac;
+}
+
+.number-patecipants {
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+    font-size: 10px;
 }
 
 .col-footer-center {
@@ -210,11 +225,9 @@ header {
     align-items: center;
     text-align: center;
     min-width: 550px;
-    /* border: 1px solid gray; */
 }
 
 .col-footer-right {
-    /* border: 1px solid gray; */
     padding-right: 15px;
 
 }
